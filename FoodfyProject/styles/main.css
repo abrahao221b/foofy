@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300";
+
+:root {
+    --primary-color: #FBDFDB;
+    --foody-color: #b34545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#license {
+    background-color:#eeeeeed5;
+    padding: 12px;
+    max-height: 10px;
+}
+
+#license p {
+    text-align: center;
+    opacity: 45%;
+
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}

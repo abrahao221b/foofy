@@ -1,0 +1,135 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Yellowtail&display=swap";
+
+body {
+    background-color: white;
+}
+
+.first_header {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+    margin: 18px 50px;
+    margin-left: 210px;
+    margin-right: 210px;
+    justify-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+}
+
+#header h2 {
+    margin: 0px 120px 40px 0px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-family: 'Yellowtail', cursive;
+}
+
+#header a {
+    margin: 10px;
+    height: 30px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+    color: rgb(29, 29, 29);
+    font-family: 'Yellowtail', cursive;
+}
+
+#header a:hover {
+    color: var(--foody-color);
+    text-decoration: underline;
+    transition: 400ms;
+}
+
+#chef_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 150px;
+    max-height: 20px;
+    margin-left: 20px;
+    max-width: 627px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    gap: 205px;
+}
+
+#chef_img div {
+    padding: 20px;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -50px;
+    justify-items: center;
+}
+
+#chef_img img {
+    padding: 50px;
+    margin-top: -142px;
+    margin-left: 50px;
+    width: 188px;
+}
+
+/* Done */
+.best_recipes {
+    padding: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+    margin-left: 210px;
+    margin-right: 210px;
+    max-width: 900px;
+}
+
+.best_recipes h2 {
+    font-family: 'Yellowtail', cursive;
+}
+
+.best_recipes h2:hover {
+    color: var(--foody-color);
+    transition: 400ms;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipes {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.recipes img {
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.recipe h3 {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-family: 'Yellowtail', cursive;
+}
+
+.recipe h3:hover {
+    color: var(--foody-color);
+    transition: 400ms;
+}
+
+.recipe p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+    opacity: 50%;
+}
