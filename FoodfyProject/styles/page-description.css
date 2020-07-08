@@ -1,0 +1,66 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Yellowtail&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap";
+
+body {
+    background-color: white;
+}
+
+.first_header {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+    margin: 18px 50px;
+    margin-left: 210px;
+    margin-right: 210px;
+    justify-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+#header h2 {
+    margin: 0px 120px 40px 0px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-family: 'Yellowtail', cursive;
+}
+
+#header a {
+    margin: 10px;
+    height: 30px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+    color: rgb(29, 29, 29);
+    font-family: 'Yellowtail', cursive;
+}
+
+#header a:hover {
+    color: var(--foody-color);
+    text-decoration: underline;
+    transition: 400ms;
+}
+
+#text h3 {
+    padding: 20px;
+    padding-left: 0%;
+    justify-items: center;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#text p {
+    justify-items: center;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 713px;
+}
