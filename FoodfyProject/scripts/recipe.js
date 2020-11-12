@@ -6,7 +6,6 @@ for (let recipe of recipes) {
             const imgId = recipe.getAttribute("id")
             modalOverlay.classList.add('active')
             modalOverlay.querySelector("img").src = `/assets/${imgId}`
-        
 
     })
 }
