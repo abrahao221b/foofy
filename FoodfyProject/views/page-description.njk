@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+
+    {% block head %}
+    <title>Description Page</title>
+    {% endblock head %}
+
+    {% block stylesheet %}
+     <link rel="stylesheet" href="/styles/page-description.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    {% endblock stylesheet %}
+
+
+    {% block pages %}
+    <a href="/page-description" target="_blank">About</a>
+    <a href="/page-recipe" target="_blank">Recipes</a>
+    {% endblock pages %}
+
+    {% block content %}
+    <div id="text">
+        <h3>About Foodfy</h3>
+        <p>
+            Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. 
+            Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget 
+            tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus 
+            nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. 
+            In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus 
+            ligula ex, semper vitae eros ut, euismod convallis augue.<br><br>Fusce nec pulvinar nunc. Duis porttitor 
+            tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl 
+            quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu, 
+            et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero 
+            neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
+        </p>
+        <h3>How Foodfy began</h3>
+        <p>
+            Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo.<br> 
+            Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget<br> 
+            tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus<br> 
+            nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus.<br> 
+            In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus<br> 
+            ligula ex, semper vitae eros ut, euismod convallis augue. Fusce nec pulvinar nunc. Duis porttitor<br> 
+            tincidunt accumsan. <br><br>Quisque pulvinar mollis ipsum ut accumsan. Proin ligula lectus, rutrum vel nisl<br> 
+            quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices lacus. Integer in tincidunt arcu,<br> 
+            et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec nisl at accumsan. Donec libero<br> 
+            neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
+        </p>
+        <h3>Ours recipes</h3>
+        <p>
+            Fusce nec pulvinar nunc. Duis porttitor tincidunt accumsan. Quisque pulvinar mollis ipsum ut accumsan. 
+            Proin ligula lectus, rutrum vel nisl quis, efficitur porttitor nisl. Morbi ut accumsan felis, eu ultrices 
+            lacus. Integer in tincidunt arcu, et posuere ligula. Morbi cursus facilisis feugiat. Praesent euismod nec 
+            nisl at accumsan. Donec libero neque, vulputate semper orci et, malesuada sodales eros. Nunc ut nulla 
+            faucibus enim ultricies euismod.
+        </p>
+    
+    {% endblock content %}

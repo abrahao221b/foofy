@@ -16,17 +16,21 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res) {
 
-    return res.render("page-home.html", {items: imgs})
+    return res.render("page-home.njk", {items: imgs})
 })
 
-server.get("/page-description.html", function(req, res) {
+server.get("/page-description", function(req, res) {
 
-    return res.render("page-description.html")
+    return res.render("page-description.njk")
 })
 
-server.get("/page-recipe.html", function(req, res) {
+server.get("/page-recipe", function(req, res) {
 
-    return res.render("page-recipe.html", {items: imgs})
+    return res.render("page-recipe.njk", {items: imgs})
+})
+
+server.use(function(res, req) {
+    res.status(404).render("Page not-found")
 })
 
 server.listen(5000, () => {
