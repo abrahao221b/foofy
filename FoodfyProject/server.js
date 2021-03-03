@@ -1,6 +1,7 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
-const imgs = require("./data")
+
+const foods = require("./data")
 
 const server = express()
 
@@ -16,7 +17,7 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res) {
 
-    return res.render("page-home.njk", {items: imgs})
+    return res.render("page-home.njk", {items: foods})
 })
 
 server.get("/page-description", function(req, res) {
@@ -26,11 +27,25 @@ server.get("/page-description", function(req, res) {
 
 server.get("/page-recipe", function(req, res) {
 
-    return res.render("page-recipe.njk", {items: imgs})
+    return res.render("page-recipe.njk", {items: foods})
 })
 
-server.use(function(res, req) {
-    res.status(404).render("Page not-found")
+server.get("/food", function(req, res) {
+    const id = req.query.id
+
+    const food = foods.find(function(food) {
+        return food.id == id
+    })
+
+    if (!food) {
+        return res.send("Food not found!!!")
+    }
+
+    return res.render("food.njk", {item: food})
+})
+
+server.use(function(req, res) {
+    res.status(404).render("not-found.njk");
 })
 
 server.listen(5000, () => {

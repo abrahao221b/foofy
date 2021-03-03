@@ -1,0 +1,257 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
+.Food-Header {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    padding: 1%;
+}
+
+.Food-Header img {
+    padding: 10px;
+    margin-right: 31%;
+    border-radius: 50px;
+    max-height: 280px;
+    width: 105%;
+}
+
+#representation {
+    padding: 15px;
+    text-align: center;
+}
+
+#Title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+
+#Chef {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    opacity: 20%;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    padding-left: 21%;
+}
+
+.description h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.Ingredientes {
+    padding: 10px;
+}
+
+#Linha-Ingredientes {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.mostrar {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    margin-top: 7px;
+    opacity: 50%;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#Linha-Modo {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+#Linha-Informacoes {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+.Modo-De-Preparo {
+    padding: 10px;
+}
+
+.Informacoes-Adicionais {
+    padding: 10px;
+}
+
+
+/* === Modal === */
+.modal#components {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    opacity: 60%;
+    top: 45%;
+    left: 25%;
+    visibility: hidden;
+   
+}
+
+.modal#preparation {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    opacity: 60%;
+    top: 52%;
+    left: 25%;
+    visibility: hidden;
+   
+}
+
+.modal#information {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    opacity: 60%;
+    top: 60%;
+    left: 25%;
+    visibility: hidden;
+   
+}
+
+.close-modal#components { 
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 11%;
+    bottom: 96.5%;
+    cursor: pointer;
+}
+
+.close-modal#preparation {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 18%;
+    bottom: 98.5%;
+    cursor: pointer;
+}
+
+.close-modal#information {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 27.5%;
+    bottom: 102.5%;
+    cursor: pointer;
+}
+
+/* === Modal.Active === */
+.modal.active#components {
+    background: none;
+    visibility: visible;
+    
+}
+
+
+.modal.active#preparation {
+    background: none;
+    visibility: visible;
+   
+}
+
+.modal.active#information {
+    background: none;
+    visibility: visible;
+   
+}
+
+.mostrar.active {
+    visibility: hidden;
+}
+
+
+.Ingredientes.active {
+    margin-bottom: 150px;
+}
+
+.Modo-De-Preparo.active {
+    margin-bottom: 80px;
+}
+
+.Informacoes-Adicionais.active {
+    margin-bottom: 100px;
+}
+
+
+/* === Modal.DoubleActive === */
+.modal.DoubleActive#components {
+    background: none;
+    visibility: visible;
+    
+}
+
+
+.modal.DoubleActive#preparation {
+    background: none;
+    visibility: visible;
+   
+}
+
+.modal.DoubleActive#information {
+    background: none;
+    visibility: visible;
+   
+}
+
+.mostrar.DoubleActive {
+    visibility: hidden;
+}
+
+
+.Ingredientes.DoubleActive {
+    margin-bottom: 150px;
+}
+
+.Modo-De-Preparo.DoubleActive {
+    margin-bottom: 80px;
+}
+
+.Informacoes-Adicionais.DoubleActive {
+    margin-bottom: 100px;
+}
+
+/* === Modal.TripleActive === */
+
+.modal.TripleActive#components {
+    background: none;
+    visibility: visible;
+    
+}
+
+
+.modal.TripleActive#preparation {
+    background: none;
+    visibility: visible;
+   
+}
+
+.modal.TripleActive#information {
+    background: none;
+    visibility: visible;
+   
+}
+
+.mostrar.TripleActive {
+    visibility: hidden;
+}
+
+
+.Ingredientes.TripleActive {
+    margin-bottom: 150px;
+}
+
+.Modo-De-Preparo.TripleActive {
+    margin-bottom: 80px;
+}
+
+.Informacoes-Adicionais.TripleActive {
+    margin-bottom: 100px;
+}

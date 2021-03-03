@@ -64,3 +64,12 @@ body {
     font-family: 'Ubuntu', sans-serif;
     max-width: 713px;
 }
+
+#license {
+    background-color:#eeeeeed5;
+    padding: 12px;
+    margin-top: 82px;
+
+    max-height: 10px;
+}
+

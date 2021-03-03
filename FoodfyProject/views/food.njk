@@ -1,0 +1,86 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Food-Page</title>
+{% endblock head %}
+
+{% block pages %}
+<a href="/views/page-home.njk" target="_blank">About</a>
+<a href="/views/page-recipe.njk" target="_blank">Recipes</a>
+{% endblock pages %}
+
+{% block content %}
+<header class="Food-Header">
+    <img src="{{item.imgLocation}}" alt="{{item.id}}">
+    <div id="representation">
+        <h1 id="Title">{{item.recipe}}</h2>
+        <h3 id="Chef">{{item.chef}}</h5>
+    </div>
+</header>
+{% endblock content %}
+
+{% block otherContent %}
+<section class="description">
+    <div class="Ingredientes" id="components">
+        <div id="Linha-Ingredientes">
+            <h3>Ingredientes</h3> <a class="mostrar" id="components"><h6>Mostrar</h6></a>
+        </div>
+       
+        <div class="modal" id="components">
+
+            <a class="close-modal" id="components"><h6>Esconder</h6></a>
+
+            <div class="modal-content">
+                <h4>
+                    {{item.components}}
+                </h4>
+            </div>
+        </div>
+          
+    </div>
+    
+    <div class="Modo-De-Preparo" id="preparation">
+        <div id="Linha-Modo">
+            <h3>Modo de Preparo</h3> <a class="mostrar" id="preparation"><h6>Mostrar</h6></a>
+        </div>
+
+        <div class="modal" id="preparation">
+            <a class="close-modal" id="preparation"><h6>Esconder</h6></a>
+
+            <div class="modal-content">
+                <h4>
+                    {{item.preparation}}
+                </h4>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="Informacoes-Adicionais" id="information">
+        <div id="Linha-Informacoes">
+            <h3>Informações adicionais</h3> <a class="mostrar" id="information"><h6>Mostrar</h6></a>
+        </div>
+        
+        <div class="modal" id="information">
+            <a class="close-modal" id="information"><h6>Esconder</h6></a>
+
+            <div class="modal-content" id="information">
+                <h4>
+                    {{item.information}}
+                </h4>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock otherContent %}
+
+
+{% block license %}
+{% endblock license %}
+
+
+{% block script %}
+<script src="/scripts/food.js"></script>
+{% endblock script %}

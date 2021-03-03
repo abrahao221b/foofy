@@ -1,0 +1,17 @@
+#license_page-not-found {
+    background-color:#eeeeeed5;
+    padding: 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 98.4%;
+
+    max-height: 10px;
+}
+
+#license_page-not-found p {
+    text-align: center;
+    opacity: 45%;
+    
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
